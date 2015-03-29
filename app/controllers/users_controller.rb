@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   protect_from_forgery :except => [:create]
 
   def index
-    
+    @users = User.all
+    render :json => @users
   end
 
   def show
