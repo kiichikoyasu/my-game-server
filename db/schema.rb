@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(version: 20150324063237) do
 
   create_table "users", force: :cascade do |t|
-    t.string   "name",       limit: 255, null: false
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "name",       limit: 255, default: "nanashi", null: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
   end
 
 end
